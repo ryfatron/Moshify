@@ -77,4 +77,26 @@ a {
     }
 }
 
+/* Icons */
+
+.icon-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary{
+    fill: var(--color-primary);
+}
+
+
 
