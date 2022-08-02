@@ -166,6 +166,19 @@ a {
 }
 
 /* Inputs */
+.input-group{
+    border:.1rem solid rgb(217, 217, 217);
+    border-radius: 4rem;
+    display: flex;
+}
+.input-group .input{
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem;
+}
+.input-group .btn{
+    margin: 4px;
+}
 .input{
     font-size: 2rem;
     padding: 1.5rem 3.5rem;
