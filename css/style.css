@@ -164,3 +164,28 @@ a {
         font-size: 1.5rem;
     }
 }
+
+/* Inputs */
+.input{
+    font-size: 2rem;
+    padding: 1.5rem 3.5rem;
+    outline: 0;
+    border:.1rem solid rgb(217, 217, 217);
+    border-radius: 4rem;
+    color: var(--color-heading);
+}
+
+::placeholder{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #d0cfd8;
+}
+
+@media screen and (min-width:1024px) {
+    .input{
+        font-size: 1.5rem;
+    }
+    ::placeholder{
+        font-size: 1.4rem;
+    }
+}
