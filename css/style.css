@@ -348,3 +348,18 @@ a {
     width: 3.5rem;
   }
 }
+
+/* Medias */
+.media {
+  display: flex;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin-left: 1rem;
+}
+.media__image {
+  position: relative;
+  top: 1rem;
+}
