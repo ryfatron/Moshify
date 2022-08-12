@@ -23,21 +23,26 @@ body {
   line-height: 1.5;
   font-size: 2.4rem;
 }
+
 h1,
 h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
 }
+
 h1 {
   font-size: 7rem;
 }
+
 h2 {
   font-size: 4rem;
 }
+
 h3 {
   font-size: 3rem;
 }
+
 p {
   margin-top: 0;
 }
@@ -46,12 +51,15 @@ p {
   body {
     font-size: 1.8rem;
   }
+
   h1 {
     font-size: 8rem;
   }
+
   h2 {
     font-size: 4rem;
   }
+
   h3 {
     font-size: 2.4rem;
   }
@@ -61,12 +69,14 @@ p {
 a {
   text-decoration: none;
 }
+
 .link-arrow {
   color: var(--color-accent);
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .link-arrow::after {
   content: "-->";
   margin-left: 5px;
@@ -123,16 +133,20 @@ a {
   background-color: var(--color-primary);
   color: white;
 }
+
 .btn--primary:hover {
   background-color: #358cff;
 }
+
 .btn--secondary {
   background-color: var(--color-secondary);
   color: white;
 }
+
 .btn--secondary:hover {
   background: #37e1ff;
 }
+
 .btn--accent {
   background-color: var(--color-accent);
   color: #fff;
@@ -148,6 +162,7 @@ a {
   background-color: #fff;
   transition: background-color 0.15s, color 0.15s;
 }
+
 .btn--outline:hover {
   background-color: var(--color-heading);
   color: #fff;
@@ -231,14 +246,17 @@ a {
   border-radius: 4rem;
   display: flex;
 }
+
 .input-group .input {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem;
 }
+
 .input-group .btn {
   margin: 4px;
 }
+
 .input {
   font-size: 2rem;
   padding: 1.5rem 3.5rem;
@@ -258,6 +276,7 @@ a {
   .input {
     font-size: 1.5rem;
   }
+
   ::placeholder {
     font-size: 1.4rem;
   }
@@ -279,6 +298,7 @@ a {
   background: var(--color-primary);
   color: #fff;
 }
+
 .card--secondary .card__header {
   background: var(--color-secondary);
   color: #fff;
@@ -288,18 +308,22 @@ a {
 .plan {
   border-radius: 7px;
 }
+
 .plan__name {
   font-size: 2.4rem;
   color: #fff;
   font-weight: 400;
 }
+
 .plan__price {
   font-size: 5rem;
 }
+
 .plan__bill-cycle {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.714);
 }
+
 .plan__description {
   font-size: 2rem;
   display: block;
@@ -327,19 +351,24 @@ a {
   right: 5%;
   top: -7px;
 }
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.8rem;
   }
+
   .plan__price {
     font-size: 4rem;
   }
+
   .plan__description {
     font-size: 1.5rem;
   }
+
   .plan__bill-cycle {
     font-size: 1.5rem;
   }
+
   .plan .badge {
     font-size: 1.2rem;
   }
@@ -353,12 +382,15 @@ a {
 .media {
   display: flex;
 }
+
 .media__title {
   margin-top: 0;
 }
+
 .media__body {
   margin-left: 1rem;
 }
+
 .media__image {
   position: relative;
   top: 1rem;
@@ -375,16 +407,24 @@ a {
 .quote__text {
   margin-bottom: 4rem;
 }
+
 .quote__text::before {
   content: open-quote;
 }
+
 .quote__text::after {
   content: close-quote;
 }
 
+.quote__icon {
+  position: relative;
+  top: -1.5rem;
+}
+
 .quote__author {
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-style: normal;
+  margin-bottom: 0;
 }
 
 .quote__company {
@@ -392,4 +432,19 @@ a {
   font-style: normal;
   color: var(--color-heading);
   opacity: 0.4;
+}
+
+@media screen and (min-width:1024px) {
+  .quote {
+    font-size: 3rem;
+  }
+
+  .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .quote__company {
+    font-size: 1.6rem;
+  }
+
 }
