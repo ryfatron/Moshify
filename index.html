@@ -16,10 +16,39 @@
   </head>
 
   <body>
-    <div class="grid grid--1x3">
-      <div style="height: 200px; background-color: dodgerblue"></div>
-      <div style="height: 200px; background-color: tomato"></div>
-      <div style="height: 200px; background-color: pink"></div>
+    <div style="width: 77%; margin: 5rem auto">
+      <div class="card testimonial grid grid--1x2">
+        <div class="testimonial__image">
+          <img src="image/testimonial.jpg" alt="" />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icon--white icon--small">
+              <use xlink:href="image/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <blockquote class="quote testimonial__quote">
+          <p class="quote__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rem
+            nemo doloribus minima adipisci atque non velit harum natus
+            consequatur, veritatis dolorem? Quis exercitationem molestiae sint
+            ea ipsum, magnam placeat.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__icon">
+                  <use xlink:href="image/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">Puthearith Bona</h3>
+                <p class="quote__company">ABC Company</p>
+                <footer></footer>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
     </div>
   </body>
 </html>
