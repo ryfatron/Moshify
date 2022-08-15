@@ -561,3 +561,31 @@ a {
     margin-left: 2rem;
   }
 }
+
+/* Collapsable */
+
+.collapsable__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsable__chevron {
+  transform: rotate(-90deg);
+  transition: all 0.2s;
+}
+
+.collapsable__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.collapsable--expanded .collapsable__chevron {
+  transform: rotate(0);
+}
+
+.collapsable--expanded .collapsable__content {
+  max-height: 100vh;
+  opacity: 1;
+}

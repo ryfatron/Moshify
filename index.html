@@ -14,21 +14,21 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <div class="callout callout--primary">
-      <div class="grid grid--1x2">
-        <div class="callout__content">
-          <h2 class="callout__heading">Ready To Get Started?</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-            quisquam repudiandae, et quos, nisi tempora est commodi beatae quas
-            quae voluptatibus suscipit ex at ipsam? Velit accusamus laborum
-            debitis vero!
-          </p>
-        </div>
-        <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+    <div class="collapsable collapsable--expanded">
+      <header class="collapsable__header">
+        <h2>Item 1</h2>
+        <svg class="icon icon--white collapsable__chevron">
+          <use xlink:href="image/sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <div class="collapsable__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quidem
+        recusandae ipsa laudantium ex numquam, excepturi architecto magnam modi
+        consequuntur doloremque aperiam id, nobis quis necessitatibus eligendi
+        saepe? Eius, magni!
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
