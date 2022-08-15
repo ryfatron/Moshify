@@ -29,6 +29,7 @@ h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 h1 {
@@ -674,5 +675,39 @@ a {
     border: none;
     margin-right: 2rem;
     font-size: 1.6rem;
+  }
+}
+
+/* Heros */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero .grid {
+  align-items: center;
+  justify-items: center;
+}
+.hero__tagline {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+}
+.hero__heading {
+  font: 3.6rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
   }
 }
