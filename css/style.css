@@ -271,6 +271,7 @@ a {
   border: 0.1rem solid rgb(217, 217, 217);
   border-radius: 4rem;
   display: flex;
+  width: 100%;
 }
 
 .input-group .input {
@@ -289,11 +290,10 @@ a {
   border-radius: 4rem;
   color: var(--color-heading);
   white-space: wrap;
-  max-width: 100%;
 }
 
 ::placeholder {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 100;
   color: #d0cfd8;
 }
@@ -304,7 +304,7 @@ a {
   }
 
   ::placeholder {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -720,30 +720,59 @@ a {
 }
 
 /* Block Demain */
-.block-domain {
-  font-size: 1.8rem;
-  padding: 2rem;
-}
-.block-domain .block__heading {
-  font-size: 3rem;
-}
-.block-domain .input-group {
-  margin-top: 4rem;
-}
-
-.block-domain .input-group .input {
-  font-size: 1.8rem;
-}
-
 .block-domain__search {
-  width: 100%;
-  justify-content: space-between;
+  margin-top: 4rem;
+  box-shadow: 0 0 40px 30px #f0f0f0;
+  border: 0;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.block-domain__search .input {
-  flex-shrink: 2;
-  flex-grow: 1;
+
+.block-domain__price {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 7rem);
+  justify-content: center;
+  justify-items: center;
+  margin-top: 3rem;
 }
-.block-domain__search .btn {
-  white-space: normal;
-  max-width: 50%;
+.block-domain__price li {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__price {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-rows: auto;
+  }
+  .block-domain__price li {
+    font-size: 1.5rem;
+  }
+}
+
+/* Block Plan */
+.block-plan .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.block-plan .grid {
+  grid-gap: 4rem;
+}
+.block-plan .plan {
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+@media screen and (min-width: 1024px) {
+  .plan--popular {
+    transform: scale(1.1);
+  }
+
+  .block-plan .plan:hover {
+    transform: scale(1.05);
+  }
+  .block-plan .plan--popular:hover {
+    transform: scale(1.15);
+  }
 }
