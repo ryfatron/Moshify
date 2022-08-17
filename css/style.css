@@ -776,3 +776,33 @@ a {
     transform: scale(1.15);
   }
 }
+
+/* Block Feature */
+.block-feature .block__header {
+  margin-bottom: 5rem;
+}
+.feature {
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+
+.block-feature__media {
+  display: block;
+}
+
+.block-feature__image {
+  width: 100%;
+}
+
+.block-feature .link-arrow {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .block-feature__media {
+    order: 2;
+  }
+}
